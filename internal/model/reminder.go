@@ -26,3 +26,9 @@ type CreateReminderRequest struct {
 	Description string    `json:"description"`
 	RemindAt    time.Time `json:"remind_at"`
 }
+
+type ListParams struct {
+	Status Status
+	Page   uint
+	Limit  uint
+}
